@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Sing up</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="form.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Montserrat+Alternates:400,600,700" rel="stylesheet">
+</head>
+<body>  
+<div class="formsing">
+	<div class="picture"><!--ЛЕВАЯ КАРТИНКА-->
+		<img src="imgform/log.png" alt="cake">
+	</div>
+	<form class="float" method="#" action="#">
+	<div class="singupwith"><!--ЗАРЕГИСТРИРОВАТЬСЯ ЧЕРЕЗ СОЦСЕТИ-->
+	<a class="wg" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession"><span class="g"></span>sing up with google</a>
+	<a class="wf" href="https://www.facebook.com"><span class="f"></span>sing up with facebook</a>
+	</div>
+	<p class="we"><span class="singemail">or sing up with email</span></p>
+	<div class="in">
+		<input  class="inp" type="text" name="name" id="name" placeholder="Enter Name" >
+	</div>
+	<div class="in">
+		<input  class="inp" type="email" name="email" id="email" placeholder="Enter email" required>
+	</div>
+	<div class="in">
+		<input  class="inp" type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="Enter password (type:XXXxxx11)" required>
+	</div>
+	<div class="sel">
+	<label for="skills">Chose your level of cooking skills</label>
+	<select name="skills" id="skills">
+	<option>Begginer</option>
+	<option>Intermediate</option>
+	<option>Advanced</option>
+	</select>
+	</div>
+<!--СОГЛАШЕНИЕ НА РАССЫЛКУ-->
+	<div class="ch">
+		<input  class="checkbox" type="checkbox" name="subscription"  id="subscription" value="1">
+		<span class="checkbox-custom"></span>
+		<label for="subscription">Yes please, send me tasty emails!</label>
+	</div>
+	<p class="dop">I’d like to receive news and exclusive offers from Cakestime. By submitting this form you agree to our T&Cs and our privacy policy.</p>
+	<button  class="su" type="submit">submit</button>
+	</form>
+</div>
+
+</body>
+</html>

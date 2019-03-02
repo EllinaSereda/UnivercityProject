@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Log in</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="form.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Montserrat+Alternates:400,600,700" rel="stylesheet">
+</head>
+<body>  
+<div class="formlog"> 
+<form method="#" action="#">
+	<div class="loginwith"><!--ВОЙТИ ЧЕРЕЗ СОЦСЕТИ-->
+	<a class="lwg" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession"><span class="g"></span>log in with google</a>
+	<a class="lwf" href="https://www.facebook.com"><span class="f"></span>log in with facebook</a>
+	</div>
+	<div class="lin">
+	<label class="logemail" for="emaillog">Log in with email</label>
+	</div>
+	<input  class="logemail" type="email" name="emaillog" id="emaillog" placeholder="Enter email" required>
+	<input  class="logemail" type="password" name="passwordem" id="passwordem" placeholder="Enter password  (type:XXXxxx11)" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+	<span class="hidden"></span>
+	<a class="logemail" href="#">Forgotten password?</a>
+	<button class="su" type="submit">sing in</button>
+	<div class="line"></div>
+	<p class="dont">Dont have an account? <a href="sing.html">Sing up</a></p>
+	</form>
+</div>
+
+
+</body>
+</html>

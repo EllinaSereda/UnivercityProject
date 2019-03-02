@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Orange Vanilla-Cream Baked French Toast</title>
+	<meta charset="utf-8">
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+     <link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">	
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="page.css">
+	<link rel="stylesheet" href="form.css">
+	<link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Montserrat+Alternates:400,600,700" rel="stylesheet">
+</head>
+<body onload = 'animateText("dynamic-text", "Life is too short to say no to cake", 0);'>
+<!--ГЛАВНОЕ МЕНЮ-->
+<nav>
+<div class="adaptive">
+<ul>
+<li><a class="burg" href="#" data-toggle="modal" data-target="#myModalburger" ></a></li>
+<li class="brand">Cakes Time</li>
+</ul>
+<div id="myModalburger" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<ul>
+		<li><a href="#">main</a></li>
+		<li><a href="#">recepies</a></li>
+		<li><a href="#">interesting</a></li>
+		<li><a href="#">about me</a></li>
+		<li><a href="log.html">sing up/log in</a></li>
+		
+		</ul>
+</div>
+</div>
+</div>	
+</div>
+
+<ul class="mainmenu">
+	<li><a href="#">
+			<span class="roll">
+				<span class="seen">main</span>
+				<span class="hover">main</span>
+			</span>
+		</a>
+	</li>
+	<li><a href="#">
+			<span class="roll">
+				<span class="seen"> recepies</span>
+				<span class="hover"> recepies</span>
+			</span>
+		</a>
+		<ul class="submenu">	<!--ВЫПАДАЮЩЕЕ МЕНЮ-->
+				<li><a href="#" class="d">
+					<span class="rollsub">
+						<span class="seensub">Tradition recepies</span>
+						<span class="hoversub">Tradition recepies</span>
+					</span>
+					</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Cakes</a></li>
+						<li><a href="#" class="d">Ice cream</a></li>
+						<li><a href="#" class="d">Sweets</a></li>
+						<li><a href="#" class="d">Bakery</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Healthy recepies</span>
+						<span class="hoversub">Healthy recepies</span>
+						</span>
+						</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Healthy cakes</a></li>
+						<li><a href="#" class="d">Healthy ice cream</a></li>
+						<li><a href="#" class="d">Healthy sweets</a></li>
+						<li><a href="#" class="d">Healthy bakery</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="d">	
+					<span class="rollsub">
+						<span class="seensub">Main ingredient</span>
+						<span class="hoversub">Main ingredient</span>
+					</span>
+						</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Cottage cheese</a></li>
+						<li><a href="#" class="d">Chocolate</a></li>
+						<li><a href="#" class="d">Eggs</a></li>
+						<li><a href="#" class="d">Banana</a></li>
+						<li><a href="#" class="d">Milk</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Special diets</span>
+						<span class="hoversub">Special diets</span>
+					</span>
+					</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Vegetarian ideas</a></li>
+						<li><a href="#" class="d">Gluten-free</a></li>
+						<li><a href="#" class="d">Vegan</a></li>
+						<li><a href="#" class="d">Sugar-free</a></li>
+						<li><a href="#" class="d">Dairy-free</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Level of skills</span>
+						<span class="hoversub">Level of skills</span>
+					</span>
+					</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Begginer</a></li>
+						<li><a href="#" class="d">Intermediate</a></li>
+						<li><a href="#" class="d">Advanced</a></li>
+					</ul>
+				</li>
+		</ul>
+		
+	</li>
+	<li><a href="#">
+			<span class="roll">
+				<span class="seen">interesting</span>
+				<span class="hover">interesting</span>
+			</span>
+		</a>
+		<ul class="submenu">	<!--ВЫПАДАЮЩЕЕ МЕНЮ-->
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Articles</span>
+						<span class="hoversub">Articles</span>
+					</span>
+				</a></li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Video</span>
+						<span class="hoversub">Video</span>
+					</span>
+				</a></li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Bakeware</span>
+						<span class="hoversub">Bakeware</span>
+					</span>
+				</a></li>
+		</ul>
+	</li>
+	<li><a href="#">
+			<span class="roll">
+				<span class="seen">about me</span>
+				<span class="hover">about me</span>
+			</span>
+		</a>
+	</li>
+	<!--КНОПКА РЕГИСТРАЦИИ И ВХОДА-->
+	<li><div class="sing"><span><a  href="#" data-toggle="modal" data-target="#myModal">sing up</a> / <a href="#" data-toggle="modal" data-target="#mysecModal">log in</a></span></div></li>
+		
+	<!--ПОИСК-->
+	<li class="seach"><span class="search"><a href="#" data-toggle="modal" data-target="#myModalpoisk"></a></span></li>
+		</ul>
+		
+		<div id="myModalpoisk" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<form class="sear" method=" " action=" ">
+		<button class="btns" data-dismiss="modal"></button>
+		<input  type="text" name="sear" id="sear" placeholder="Find a recepie"> 
+		</form>
+		</div>
+		</div>
+		</div>
+		
+		<!--РЕГИСТРАЦИЯ-->
+		<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="formsing">
+	<div class="picture"><!--ЛЕВАЯ КАРТИНКА-->
+		<img src="imgform/log.png" alt="cake">
+	</div>
+	<form class="float" method="#" action="#">
+	<button class="btn" data-dismiss="modal"></button>
+	<div class="singupwith"><!--ЗАРЕГИСТРИРОВАТЬСЯ ЧЕРЕЗ СОЦСЕТИ-->
+	<a class="wg" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession"><span class="g"></span>sing up with google</a>
+	<a class="wf" href="https://www.facebook.com"><span class="f"></span>sing up with facebook</a>
+	</div>
+	<p class="we"><span class="singemail">or sing up with email</span></p>
+	<div class="in">
+		<input  class="inp" type="text" name="name" id="name" placeholder="Enter Name" >
+	</div>
+	<div class="in">
+		<input  class="inp" type="email" name="email" id="email" placeholder="Enter email" required>
+	</div>
+	<div class="in">
+		<input  class="inp" type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="Enter password (type:XXXxxx11)" required>
+	</div>
+	<div class="sel">
+	<label for="skills">Chose your level of cooking skills</label>
+	<select name="skills" id="skills">
+	<option>Begginer</option>
+	<option>Intermediate</option>
+	<option>Advanced</option>
+	</select>
+	</div>
+<!--СОГЛАШЕНИЕ НА РАССЫЛКУ-->
+	<div class="ch">
+		<input  class="checkbox" type="checkbox" name="subscription"  id="subscription" value="1">
+		<span class="checkbox-custom"></span>
+		<label for="subscription">Yes please, send me tasty emails!</label>
+	</div>
+	<p class="dop">I’d like to receive news and exclusive offers from Cakestime. By submitting this form you agree to our T&Cs and our privacy policy.</p>
+	<button  class="su" type="submit">submit</button>
+	</form>
+</div>
+</div>
+	</div>
+		</div>
+
+<!--Вход-->
+<div id="mysecModal" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+<div class="formlog"> 
+<form method="#" action="#">
+<button class="btn" data-dismiss="modal"></button>
+	<div class="loginwith"><!--ВОЙТИ ЧЕРЕЗ СОЦСЕТИ-->
+	<a class="lwg" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession"><span class="g"></span>log in with google</a>
+	<a class="lwf" href="https://www.facebook.com"><span class="f"></span>log in with facebook</a>
+	</div>
+	<div class="lin">
+	<label class="logemail" for="emaillog">Log in with email</label>
+	</div>
+	<input  class="logemail" type="email" name="emaillog" id="emaillog" placeholder="Enter email" required>
+	<div class="lin">
+	<label class="logemail" for="passwordem">Log in with email</label>
+	</div>
+	<input  class="logemail" type="password" name="passwordem" id="passwordem" placeholder="Enter password  (type:XXXxxx11)" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+	<span class="hidden"></span>
+	<a class="logemail" href="#">Forgotten password?</a>
+	<button class="su" type="submit">sing in</button>
+	<div class="line"></div>
+	<p class="dont">Dont have an account? <a href="#">Sing up</a></p>
+	</form>
+</div>
+</div>
+	</div>
+		</div>
+</nav>
+
+
+
+<!-- НАЗВАНИЕ-->
+<div class="namecent">
+	<h2 class="name"><span class="l">Cakes</span><span class="r">time</span></h2>
+	<p class="subname">Culinary blog</p>
+</div>
+<!-- БЕГУЩАЯ СТРОКА-->
+<script>
+  function animateText(id, text, i) {
+    document.getElementById(id).innerHTML = text.substring(0, i);
+    i++;
+    if (i > text.length) i = 0;
+    setTimeout("animateText('" + id + "','" + text + "'," + i + ")", 80);
+       }
+</script>
+<div class="run"> <span id = 'dynamic-text'></span></div> 
+
+
+<!-- ОСНОВНАЯ ЧАСТЬ-->
+	
+<!-- ЛЕВЫЙ СТОЛБИК-->
+	<div  class="inf">	
+	<p class="data">May 1, 2018</p>
+	<h3>Orange Vanilla-Cream Baked French Toast</h3>
+	<h4>By Ellina Sereda</h4>
+	<img src="img/page/rec/toast.jpg" alt=" " class="toast">
+	<p class="text">A friend asked me recently what she should serve for a holiday brunch she had coming up with multiple families coming over. She was feeling anxious. And I totally get it. Last time I hosted a brunch, I accidentally dripped some water into a pan of frying eggs and the oil sputtered INTO MY EYEBALL.</p>
+	<p class="text">(I burned my cornea, and the eggs were eventually served not only overcooked, but also cold, and seasoned with a few tears.)</p>
+	<p class="text">Breakfast is really a bit of a tricky meal to serve a crowd. Any incarnation of eggs other than scrambled requires sweating and stressing over a hot stove.  Pancakes and waffles are a make-to-order kind of thing, with a lot of time spent flipping and pacing.</p>
+	<img src="img/page/rec/toast1.jpg" alt=" " class="toast">
+	<p class="text">What my friend, and anyone serving brunch, needs is recipe to feed a hungry morning crowd with minimal effort, low stress, and high reward. Something you can pull off even before caffeine. Something that doesn’t necessitate judging doneness of yolks while simultaneously not burning toast.</p>
+	<p class="text">Enter the overnight breakfast bake. You know the kind. They were called “wife-savers” in our parents’ day, a cheeky 50s-era pun nodding to the ease of morning preparation. Their main feature is that they can be made the night before. All you have to do is roll out of bed, start the coffee maker, and put your hair in a ponytail – boom, ready for guests. They can be sweet or savoury.</p>
+	<img src="img/page/rec/toast2.jpg" alt=" " class="toast">
+	<p class="text">This particular Baked French Toast not only fits the wife-saving (cringe) criteria, it is also crazy delicious. I pride myself on pretty decent willpower and couldn’t resist a third slice this morning.</p>
+	<p class="text">I partnered with Tropicana Canada on the recipe. The custard base is made of Tropicana Pure Premium Orange Juice (which is 100% OJ squeezed from fresh oranges; no sugar added, not from concentrate), fresh cream, maple syrup and vanilla.</p>
+	<p class="text">I adore cream, vanilla and orange together – think creamsicle. The citrus flavour is fragrant but not bracing. The combination is delicate and delicious. You’ll swoon.</p>
+	<img src="img/page/rec/toast3.jpg" alt=" " class="toast">
+	<p class="text">With the orange, the french toast already has an air of Christmas, but I showered it with confectioners’ sugar, sliced clementines, and a few almonds to make it even more special. A scattering of pomegranate arils would also be beautiful.</p>
+	<p class="text">The recipe serves about five, assuming your guests have more restraint than I do (it makes ten slices). You can easily double it and bake two pans at the same time, just rotate their oven positions about half-way through.</p>
+	<img src="img/page/rec/toast4.jpg" alt=" " class="toast">
+	<p class="text">If you want an easy side, bake a pan of bacon or sausages in the oven at the same time (the bacon will need a few minutes longer than that recipe suggests as the oven temperature is a bit lower).</p>
+	<p class="text">I made some yummy recipes with Tropicana around this time last year, too – the Christmas Sangria recipe is a definite repeat, so delicious. And in case you missed it, you must try this delicious Mulled Wine recipe I shared recently (I made it four times that week and got an enthusiastic stamp of approval from not one, but TWO German friends – and Germans invented it, sooooo….).</p>
+	<img src="img/page/rec/toastfin.jpg" alt=" " class="toast">
+	<h5>Orange Vanilla-Cream Baked French Toast</h5>
+	<p class="text">A scrumptious, festive Baked French Toast recipe with orange and vanilla. Option to be prepared in advance and refrigerated overnight. </p>
+	<ul class="leftcol">
+	<li><img src="cookicon/meal.png" alt=" ">Course</li>
+	<li><img src="cookicon/recipes.png" alt=" ">Cuisine</li>
+	<li><img src="cookicon/board.png" alt=" ">Prep Time</li>
+	<li><img src="cookicon/pot.png" alt=" ">Cook Time</li>
+	<li><img src="cookicon/time.png" alt=" ">Total Time</li>
+	<li><img src="cookicon/cutlery.png" alt=" ">Servings</li>
+	<li><img src="cookicon/chef.png" alt=" ">Author</li>
+	</ul>
+	<ul class="rightcol">
+	<li>Breakfast</li>
+	<li>American</li>
+	<li>10 minutes</li>
+	<li>30 minutes</li>
+	<li>40 minutes</li>
+	<li>5</li>
+	<li>Ellina Sereda</li>
+	</ul>
+	<h6 class="ingredient">Ingredients</h6>
+	<ul class="ingredient">
+	<li>10 thick slices of day-old white or challah bread</li>
+	<li>6 large eggs</li>
+	<li>1 cup Tropicana Orange Juice</li>
+	<li>1/3 whipping cream</li>
+	<li>1/4 cup pure maple syrup</li>
+	<li>1 tsp pure vanilla extract</li>
+	<li>4 tbsp melted butter</li>
+	</ul>
+	<h6>Instructions</h6>
+	<ol>
+	<li>Preheat oven to 375ºF. Line a 9x13x2 baking dish with parchment paper.</li>
+	<li>Crack eggs into a large bowl and lightly beat with a whisk. Whisk in orange juice, cream, maple syrup and vanilla extract.</li>
+	<li>Dip slices of bread in egg mixture one at a time, then arrange in overlapping, semi-standing-up layers in baking dish (as pictured). Drizzle with melted butter.</li>
+	<li>Bake for about 30 minutes, until crispy and golden.  If you're questioning doneness, internal temperature should reach 160ºF.</li>
+	</ol>
+	<p class="bold">OVERNIGHT VERSION: cover tightly with plastic wrap and refrigerate overnight. Turn oven on to 375ºF and remove dish from fridge while oven preheats. Bake for about 35 minutes, until crispy and golden.  If you're questioning doneness, internal temperature should reach 160ºF.</p>
+	
+	<h5 class="rel">Related posts</h5>
+	<div class="view view-first">
+		<img src="img/page/read/r1.jpg" alt=" ">
+		<div class="maskp">
+			<a href="#" class="read">Salted Double Chocolate Pudding</a>
+		</div>
+	</div>
+	<div class="view view-first">
+		<img src="img/page/read/r2.jpg" alt=" ">
+		<div class="maskp">
+			<a href="#" class="read">Caramallow Cupcakes</a>
+		</div>
+	</div>
+	<div class="view view-first">
+		<img src="img/page/read/r3.jpg" alt=" ">
+		<div class="maskp">
+			<a href="#" class="read">Buttermilk Waffles</a>
+		</div>
+	</div>
+	<div class="view view-first">
+		<img src="img/page/read/r4.jpg" alt=" ">
+		<div class="maskp">
+			<a href="#" class="read">Fluffy Ricotta Pancakes</a>
+		</div>
+	</div>
+	<div class="view view-first">
+		<img src="img/page/read/r5.jpg" alt=" ">
+		<div class="maskp">
+				<a href="#" class="read">Moist Chocolate Cake</a>
+		</div>
+	</div>
+	<!--КОМЕНТАРИИ-->
+		<div class="comment">
+<form method='post' action="" name="formname" target="_parent"> 
+<div> 
+<label for="sname">Name:</label>
+</div>
+<input name="sname" id="sname" type="text" placeholder="Enter Name"> 
+<div> 
+<p><label for="message">Comment:</label></p>
+<textarea rows="10" cols="45" name="message" id="message"> </textarea>
+</div> 
+<div> 
+<input name="submit" type="submit" value="Add"> 
+</div> 
+</form>
+	</div>
+
+		</div>
+	
+	<!-- ПРАВЫЙ СТОЛБИК-->
+	<ul class="right">
+	<!--ОБО МНЕ-->
+		<li class="me">
+	   		<div class="m"></div>
+			<p class="descr">Hi, I'm Ellina. I'm in the Cakestime kitchen making a spectacular mess + making something delicious, in roughly equal parts. So happy that you've joined me!</p>
+			<a class="vk" href="https://vk.com/ellina_sereda"></a>
+			<a class="twitter" href="https://vk.com/ellina_sereda"></a>
+			<a class="inst" href="https://www.instagram.com/ellina_sereda/"></a>
+			<a class="face" href="https://www.facebook.com/profile.php?id=100022669491047"></a>
+			<a class="goog" href="https://plus.google.com/u/0/100707219151260884746"></a>
+			
+
+		</li>
+	<!--ТАБЛИЦА-->
+		<li class="tab">
+			<table>
+				<caption>Cup To Gram Conversions</caption><!--Создаем заголовок-->
+				<thead>
+					<tr>
+						<th>Ingredient</th>
+						<th colspan="2">1 Cup</th>
+					</tr>
+				</thead><!--Формируем шапку-->
+				<tbody>
+					<tr>
+						<td>Butter</td>
+						<td>215.5</td>
+						<td>7.6</td>
+					</tr>		
+					<tr>
+						<td>Flour (plain)</td>
+						<td>125</td>
+						<td>4.41</td>
+					</tr>		
+					<tr>
+						<td>Flour (bread)</td>
+						<td>130</td>
+						<td>4.48</td>
+					</tr>		
+					<tr>
+						<td>Honey</td>
+						<td>336</td>
+						<td>11.85</td>
+					</tr>		
+					<tr>
+						<td>Margarine</td>
+						<td>230</td>
+						<td>8.1</td>
+					</tr>		
+					<tr>
+						<td>Milk</td>
+						<td>244.87</td>
+						<td>8.64</td>
+					</tr>		
+					<tr>
+						<td>Oats</td>
+						<td>102.2</td>
+						<td>3.6</td>
+					</tr>		
+					<tr>
+						<td>Sugar (white)</td>
+						<td>201</td>
+						<td>7.05</td>
+					</tr>		
+					<tr>
+						<td>Sugar (brown)</td>
+						<td>170.58</td>
+						<td>6.02</td>
+					</tr>		
+				</tbody>
+			</table>
+		</li>
+<!--РЕКЛАМНЫЙ БАНЕР-->
+		<li>
+		<a class="cont" href="https://www.amazon.com/b/ref=sv_hg_fl_289668?ie=UTF8&node=289668" target="_blank">
+		</a>
+</li>
+  	</ul>
+  
+	<!--ФУТЕР-->
+	<footer>
+	<div class="center">
+		<div class="log2">
+
+		<img src="img/logo2.png" alt=" ">
+			
+		</div>
+		<div class="intrest">
+			<h6 class="head">interesting facts</h6>
+			<ul>
+				<li>The oldest cake is 2 pieces from the wedding of Queen Victoria and Prince Albert, dated 1840. The oldest intact cake dates from 1898 with only one large crack in the icing from a WWII bomb blast.</li>
+				<li>The tallest cake measured 33 m (108.27 ft) and was made by Hakasima-Nilasari Culinary School.</li>
+				<li>The largest cupcake weighs 1,176.6 kg (2,594 lb) and was achieved by Georgetown Cupcake (USA) at Georgetown Cupcake’s national shipping headquarters in Sterling.</li>
+			</ul>
+		</div>
+		<div>
+		<p class="head">Food Quotes</p>
+		<div class="q">
+			<p class="quote">“If you're trying to create a company, it's like baking a cake. You have to have all the ingredients in the right proportion.“</p>
+			<span></span>
+			</div>
+			<p>Elon Musk</p>
+		</div>
+		<div>
+		<p class="head">Search a recepie</p>
+			<form method=" " action=" ">
+				<input  type="text" name="search" id="search" placeholder="Find a recepie"> 
+			</form>
+		</div>
+		</div>
+		<p class="copyright">© 2018 cakestime creative inc all rights reserved.</p>
+	</footer>
+
+
+</body>
+</html>

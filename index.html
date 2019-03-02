@@ -1,0 +1,529 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<title>Cakes time</title>
+	<meta charset="utf-8">
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+    <link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="form.css">	
+	<link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Montserrat+Alternates:400,600,700" rel="stylesheet">
+</head>
+<body onload = 'animateText("dynamic-text", "Life is too short to say no to cake", 0);'>
+<!--ГЛАВНОЕ МЕНЮ-->
+<nav>
+<div class="adaptive">
+<ul>
+<li><a class="burg" href="#" data-toggle="modal" data-target="#myModalburger" ></a></li>
+<li class="brand">Cakes Time</li>
+</ul>
+<div id="myModalburger" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<ul>
+		<li><a href="#">main</a></li>
+		<li><a href="#">recepies</a></li>
+		<li><a href="#">interesting</a></li>
+		<li><a href="#">about me</a></li>
+		<li><a href="log.html">sing up/log in</a></li>
+		
+		</ul>
+</div>
+</div>
+</div>	
+</div>
+
+<ul class="mainmenu">
+	<li><a href="#">
+			<span class="roll">
+				<span class="seen">main</span>
+				<span class="hover">main</span>
+			</span>
+		</a>
+	</li>
+	<li><a href="#">
+			<span class="roll">
+				<span class="seen"> recepies</span>
+				<span class="hover"> recepies</span>
+			</span>
+		</a>
+		<ul class="submenu">	<!--ВЫПАДАЮЩЕЕ МЕНЮ-->
+				<li><a href="#" class="d">
+					<span class="rollsub">
+						<span class="seensub">Tradition recepies</span>
+						<span class="hoversub">Tradition recepies</span>
+					</span>
+					</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Cakes</a></li>
+						<li><a href="#" class="d">Ice cream</a></li>
+						<li><a href="#" class="d">Sweets</a></li>
+						<li><a href="#" class="d">Bakery</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Healthy recepies</span>
+						<span class="hoversub">Healthy recepies</span>
+						</span>
+						</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Healthy cakes</a></li>
+						<li><a href="#" class="d">Healthy ice cream</a></li>
+						<li><a href="#" class="d">Healthy sweets</a></li>
+						<li><a href="#" class="d">Healthy bakery</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="d">	
+					<span class="rollsub">
+						<span class="seensub">Main ingredient</span>
+						<span class="hoversub">Main ingredient</span>
+					</span>
+						</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Cottage cheese</a></li>
+						<li><a href="#" class="d">Chocolate</a></li>
+						<li><a href="#" class="d">Eggs</a></li>
+						<li><a href="#" class="d">Banana</a></li>
+						<li><a href="#" class="d">Milk</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Special diets</span>
+						<span class="hoversub">Special diets</span>
+					</span>
+					</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Vegetarian ideas</a></li>
+						<li><a href="#" class="d">Gluten-free</a></li>
+						<li><a href="#" class="d">Vegan</a></li>
+						<li><a href="#" class="d">Sugar-free</a></li>
+						<li><a href="#" class="d">Dairy-free</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Level of skills</span>
+						<span class="hoversub">Level of skills</span>
+					</span>
+					</a>
+					<ul class="secsubmenu">
+						<li><a href="#" class="d">Begginer</a></li>
+						<li><a href="#" class="d">Intermediate</a></li>
+						<li><a href="#" class="d">Advanced</a></li>
+					</ul>
+				</li>
+		</ul>
+		
+	</li>
+	<li><a href="#">
+			<span class="roll">
+				<span class="seen">interesting</span>
+				<span class="hover">interesting</span>
+			</span>
+		</a>
+		<ul class="submenu">	<!--ВЫПАДАЮЩЕЕ МЕНЮ-->
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Articles</span>
+						<span class="hoversub">Articles</span>
+					</span>
+				</a></li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Video</span>
+						<span class="hoversub">Video</span>
+					</span>
+				</a></li>
+				<li><a href="#" class="d">
+				<span class="rollsub">
+						<span class="seensub">Bakeware</span>
+						<span class="hoversub">Bakeware</span>
+					</span>
+				</a></li>
+		</ul>
+	</li>
+	<li><a href="#">
+			<span class="roll">
+				<span class="seen">about me</span>
+				<span class="hover">about me</span>
+			</span>
+		</a>
+	</li>
+	<!--КНОПКА РЕГИСТРАЦИИ И ВХОДА-->
+	<li><div class="sing"><span><a  href="#" data-toggle="modal" data-target="#myModal">sing up</a> / <a href="#" data-toggle="modal" data-target="#mysecModal">log in</a></span></div></li>
+		
+	<!--ПОИСК-->
+	<li class="seach"><span class="search"><a href="#" data-toggle="modal" data-target="#myModalpoisk"></a></span></li>
+		</ul>
+		
+		<div id="myModalpoisk" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<form class="sear" method=" " action=" ">
+		<button class="btns" data-dismiss="modal"></button>
+		<input  type="text" name="sear" id="sear" placeholder="Find a recepie"> 
+		</form>
+		</div>
+		</div>
+		</div>
+		
+		<!--РЕГИСТРАЦИЯ-->
+		<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="formsing">
+	<div class="picture"><!--ЛЕВАЯ КАРТИНКА-->
+		<img src="imgform/log.png" alt="cake">
+	</div>
+	<form class="float" method="#" action="#">
+	<button class="btn" data-dismiss="modal"></button>
+	<div class="singupwith"><!--ЗАРЕГИСТРИРОВАТЬСЯ ЧЕРЕЗ СОЦСЕТИ-->
+	<a class="wg" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession"><span class="g"></span>sing up with google</a>
+	<a class="wf" href="https://www.facebook.com"><span class="f"></span>sing up with facebook</a>
+	</div>
+	<p class="we"><span class="singemail">or sing up with email</span></p>
+	<div class="in">
+		<input  class="inp" type="text" name="name" id="name" placeholder="Enter Name" >
+	</div>
+	<div class="in">
+		<input  class="inp" type="email" name="email" id="email" placeholder="Enter email" required>
+	</div>
+	<div class="in">
+		<input  class="inp" type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="Enter password (type:XXXxxx11)" required>
+	</div>
+	<div class="sel">
+	<label for="skills">Chose your level of cooking skills</label>
+	<select name="skills" id="skills">
+	<option>Begginer</option>
+	<option>Intermediate</option>
+	<option>Advanced</option>
+	</select>
+	</div>
+<!--СОГЛАШЕНИЕ НА РАССЫЛКУ-->
+	<div class="ch">
+		<input  class="checkbox" type="checkbox" name="subscription"  id="subscription" value="1">
+		<span class="checkbox-custom"></span>
+		<label for="subscription">Yes please, send me tasty emails!</label>
+	</div>
+	<p class="dop">I’d like to receive news and exclusive offers from Cakestime. By submitting this form you agree to our T&Cs and our privacy policy.</p>
+	<button  class="su" type="submit">submit</button>
+	</form>
+</div>
+</div>
+	</div>
+		</div>
+
+<!--Вход-->
+<div id="mysecModal" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+<div class="formlog"> 
+<form method="#" action="#">
+<button class="btn" data-dismiss="modal"></button>
+	<div class="loginwith"><!--ВОЙТИ ЧЕРЕЗ СОЦСЕТИ-->
+	<a class="lwg" href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession"><span class="g"></span>log in with google</a>
+	<a class="lwf" href="https://www.facebook.com"><span class="f"></span>log in with facebook</a>
+	</div>
+	<div class="lin">
+	<label class="logemail" for="emaillog">Log in with email</label>
+	</div>
+	<input  class="logemail" type="email" name="emaillog" id="emaillog" placeholder="Enter email" required>
+	<div class="lin">
+	<label class="logemail" for="passwordem">Log in with email</label>
+	</div>
+	<input  class="logemail" type="password" name="passwordem" id="passwordem" placeholder="Enter password  (type:XXXxxx11)" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+	<span class="hidden"></span>
+	<a class="logemail" href="#">Forgotten password?</a>
+	<button class="su" type="submit">sing in</button>
+	<div class="line"></div>
+	<p class="dont">Dont have an account? <a href="#">Sing up</a></p>
+	</form>
+</div>
+</div>
+	</div>
+		</div>
+</nav>
+
+
+
+<!-- НАЗВАНИЕ-->
+<div class="namecent">
+	<h2 class="name"><span class="l">Cakes</span><span class="r">time</span></h2>
+	<p class="subname">Culinary blog</p>
+</div>
+<!-- БЕГУЩАЯ СТРОКА-->
+<script>
+  function animateText(id, text, i) {
+    document.getElementById(id).innerHTML = text.substring(0, i);
+    i++;
+    if (i > text.length) i = 0;
+    setTimeout("animateText('" + id + "','" + text + "'," + i + ")", 80);
+       }
+</script>
+<div class="run"> <span id = 'dynamic-text'></span></div> 
+
+<!--СЛАЙДЕР-->
+<div class="slider">
+<div class="scroll"> 
+<input type="radio" id="l0" name="raz" checked="checked"/> 
+<input type="radio" id="l1" name="raz"/> 
+<input type="radio" id="l2" name="raz"/> 
+<input type="radio" id="l3" name="raz"/> 
+<input type="radio" id="l4" name="raz"/> 
+<input type="radio" id="l5" name="raz"/> 
+<input type="radio" id="l6" name="raz"/> 
+<label for="l0"></label> 
+<label for="l1"></label> 
+<label for="l2"></label> 
+<label for="l3"></label> 
+<label for="l4"></label> 
+<label for="l5"></label> 
+<label for="l6"></label> 
+<div> 
+<a href="#"><img src="img/slider/1.jpg" alt=""/></a>
+<a href="#"><img src="img/slider/2.jpg" alt=""/></a>
+<a href="#"><img src="img/slider/3.jpg" alt=""/></a>
+<a href="#"><img src="img/slider/4.jpg" alt=""/></a>
+<a href="#"><img src="img/slider/5.jpg" alt=""/></a>
+<a href="#"><img src="img/slider/6.jpg" alt=""/></a>
+<a href="#"><img src="img/slider/7.jpg" alt=""/></a>
+<a href="#"><img src="img/slider/8.jpg" alt=""/></a>
+<a href="#"><img src="img/slider/9.jpg" alt=""/></a>
+</div> 
+<div class="text">
+<p>Raspberry Cake</p>
+<p>Chia Jam</p>
+<p>Truffles </p>
+<p>Frozen Yogurt</p>
+<p>Cupcakes</p>
+<p>Chocolate Cake</p>
+<p>Blood cake</p>
+<p>Sweet Cupcakes</p>
+<p>Parsnip Cupcakes</p>-->
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!--ОФОРМЛЕНИЕ ПОДПИСКИ-->
+<form class="ma" method="#" action="#">
+	<label class="subscription" for="getposts">Get new cakestime posts delivered straight to your inbox</label>
+	<div class="subscript">
+		<input type="email" name="getposts" id="getposts" placeholder="Your email adress"> 
+		<button type="submit">Subscribe</button>
+	</div>
+</form>
+
+
+
+<!-- ОСНОВНАЯ ЧАСТЬ-->
+	<h3 class="lat"><span></span>Latest news</h3>
+<!-- ЛЕВЫЙ СТОЛБИК-->
+	<div  class="inf">	
+	<!--НОВОСТЬ 1-->
+	<div class="news">
+	
+	<div class="white">
+	  			 	<div class="viw viw-f">
+						<div class="mask">
+							<h2>Ingredients</h2>
+							<ul>
+								<li>Bread</li>
+								<li>Eggs</li>
+								<li>Orange Juice</li>
+								<li>Maple syrup</li>
+								<li>Vanila extract</li>
+								<li>Butter</li>
+							</ul>
+							<a href="#" class="info">Add to favourites</a>
+						</div>
+					</div>
+		<div class="fon">
+			<h4>Orange Vanilla-Cream Baked French Toast</h4>
+			<p class="data">May 1, 2018</p>
+			<p class="descr">A scrumptious, festive Baked French Toast recipe with orange and vanilla. Option to be prepared in advance and refrigerated overnight.</p>
+			<a href="page.html">Continue reading</a>
+		</div>
+		</div>
+	</div>
+	
+	<!--НОВОСТЬ 2-->
+	<div class="news">
+	<div class="white">
+	  			 	<div class="viw viw-s ">
+						<div class="mask">
+							<h2>Ingredients</h2>
+							<ul>
+								<li>Milk</li>
+								<li>Eggs</li>
+								<li>Flour</li>
+								<li>Sugar</li>
+								<li>Rasins</li>
+								<li>Cinnamon</li>
+								<li>Butter</li>
+							</ul>
+							<a href="#" class="info">Add to favourites</a>
+						</div>
+					</div>
+		<div class="fon">
+			<h4>Speedy Hot Cross Cinnamon Rolls</h4>
+			<p class="data">April 20, 2018</p>
+			<p class="descr">A scrumptious, festive Baked French Toast recipe with orange and vanilla. Option to be prepared in advance and refrigerated overnight.</p>
+			<a href="#">Continue reading</a>
+		</div>
+		</div>
+	</div>
+	
+	<!--НОВОСТЬ 3-->
+	<div class="news">
+	   	<div class="white">
+	  			 	<div class="viw viw-t">
+						<div class="mask">
+							<h2>Ingredients</h2>
+							<ul>
+								<li>Milk</li>
+								<li>Water</li>
+								<li>Strawberries</li>
+								<li>Flour</li>
+								<li>Butter</li>
+								<li>Baking powder</li>
+							</ul>
+							<a href="#" class="info">Add to favourites</a>
+						</div>
+					</div>
+			<div class="fon">
+				<h4>Strawberry Cobbler</h4>
+				<p class="data">April 9, 2018</p>
+				<p class="descr">A rustic strawberry cobbler with easy drop-biscuit topping and (optional) rose syrup. In partnership with Rubbermaid.</p>
+				<a href="#">Continue reading</a>
+			</div>
+		</div>
+	</div>
+	<a class="latest" href="#"> View more</a>
+	</div>
+	<!-- ПРАВЫЙ СТОЛБИК-->
+	<ul class="right">
+	<!--ОБО МНЕ-->
+		<li class="me">
+	   		<div class="m"></div>
+			<p class="descr">Hi, I'm Ellina. I'm in the Cakestime kitchen making a spectacular mess + making something delicious, in roughly equal parts. So happy that you've joined me!</p>
+			<a class="vk" href="https://vk.com/ellina_sereda"></a>
+			<a class="twitter" href="https://vk.com/ellina_sereda"></a>
+			<a class="inst" href="https://www.instagram.com/ellina_sereda/"></a>
+			<a class="face" href="https://www.facebook.com/profile.php?id=100022669491047"></a>
+			<a class="goog" href="https://plus.google.com/u/0/100707219151260884746"></a>
+			
+
+		</li>
+	<!--ТАБЛИЦА-->
+		<li class="tab">
+			<table>
+				<caption>Cup To Gram Conversions</caption><!--Создаем заголовок-->
+				<thead>
+					<tr>
+						<th>Ingredient</th>
+						<th colspan="2">1 Cup</th>
+					</tr>
+				</thead><!--Формируем шапку-->
+				<tbody>
+					<tr>
+						<td>Butter</td>
+						<td>215.5</td>
+						<td>7.6</td>
+					</tr>		
+					<tr>
+						<td>Flour (plain)</td>
+						<td>125</td>
+						<td>4.41</td>
+					</tr>		
+					<tr>
+						<td>Flour (bread)</td>
+						<td>130</td>
+						<td>4.48</td>
+					</tr>		
+					<tr>
+						<td>Honey</td>
+						<td>336</td>
+						<td>11.85</td>
+					</tr>		
+					<tr>
+						<td>Margarine</td>
+						<td>230</td>
+						<td>8.1</td>
+					</tr>		
+					<tr>
+						<td>Milk</td>
+						<td>244.87</td>
+						<td>8.64</td>
+					</tr>		
+					<tr>
+						<td>Oats</td>
+						<td>102.2</td>
+						<td>3.6</td>
+					</tr>		
+					<tr>
+						<td>Sugar (white)</td>
+						<td>201</td>
+						<td>7.05</td>
+					</tr>		
+					<tr>
+						<td>Sugar (brown)</td>
+						<td>170.58</td>
+						<td>6.02</td>
+					</tr>		
+				</tbody>
+			</table>
+		</li>
+<!--РЕКЛАМНЫЙ БАНЕР-->
+		<li>
+		<a class="cont" href="http://www.amazon.com/b/ref=sv_hg_fl_289668?ie=UTF8&node=289668" target="_blank">
+		</a>
+</li>
+  	</ul>
+  
+	<!--ФУТЕР-->
+	<footer>
+	<div class="center">
+		<div class="log2">
+
+		<img src="img/logo2.png" alt=" ">
+			
+		</div>
+		<div class="intrest">
+			<h6 class="head">interesting facts</h6>
+			<ul>
+				<li>The oldest cake is 2 pieces from the wedding of Queen Victoria and Prince Albert, dated 1840. The oldest intact cake dates from 1898 with only one large crack in the icing from a WWII bomb blast.</li>
+				<li>The tallest cake measured 33 m (108.27 ft) and was made by Hakasima-Nilasari Culinary School.</li>
+				<li>The largest cupcake weighs 1,176.6 kg (2,594 lb) and was achieved by Georgetown Cupcake (USA) at Georgetown Cupcake’s national shipping headquarters in Sterling.</li>
+			</ul>
+		</div>
+		<div>
+		<p class="head">Food Quotes</p>
+		<div class="q">
+			<p class="quote">“If you're trying to create a company, it's like baking a cake. You have to have all the ingredients in the right proportion.“</p>
+			<span></span>
+			</div>
+			<p class="author">Elon Musk</p>
+		</div>
+		<div>
+		<p class="head">Search a recepie</p>
+			<form method=" " action=" ">
+				<input  type="text" name="search" id="search" placeholder="Find a recepie"> 
+			</form>
+		</div>
+		</div>
+		<p class="copyright">© 2018 cakestime creative inc all rights reserved.</p>
+	</footer>
+
+
+</body>
+</html>

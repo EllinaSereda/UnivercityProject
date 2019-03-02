@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "my";
+   src:url("fonts/fontello.eot") format("embedded-opentype"),
+    url("fonts/fontello.woff") format("woff"),
+    url("fonts/fontello.ttf") format("truetype"),
+    url("fonts/fontello.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	font-family: 'Montserrat Alternates', sans-serif;
+	background-color:white;
+}
+form{
+	margin:0;
+}
+.formsing{
+	width:900px;
+	border:1px solid grey;
+	box-shadow: 0 0 100px grey;
+	margin:78px auto;
+	background-color:white;
+}
+.formsing:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+/*ЛЕВАЯ КАРТИНКА*/
+.picture{
+	width:450px;
+	float:left;
+	/*border-right:1px solid grey;*/
+	background-color:#f4f4f4;
+}
+.picture:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+form.float{
+	float:left;
+	width: 450px;
+}
+form:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/*ЗАРЕГИСТРИРОВАТЬСЯ ЧЕРЕЗ СОЦСЕТИ*/
+.singupwith{
+	clear:both;
+}
+.singupwith a{
+	display:block;
+	width:217.5px;
+	float:left;
+	text-align:center;
+	text-transform:uppercase;
+	padding:15px 0 ;
+	color:white;
+	font-size:13px;
+}
+.singupwith a:hover{
+	box-shadow: 0 0 15px grey;
+}
+.singupwith a:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.wg{/*google*/
+	background-color:#a5de72;
+margin:20px 2.5px 0 5px ;
+}
+.wf{/*facebook*/
+	
+	background-color:#ebbabd;
+	margin:20px 5px  0px 2.5px ;
+	}
+span.g:before{
+	content: "\E802";
+	color:#bc1549;
+	margin-right:5px;
+	font-size:20px;
+	font-family:"my";
+}
+span.f:before{	
+	content: "\F300";
+	color:#bc1549;
+	margin-right:5px;
+	font-size:20px;
+	font-family:"my";
+	}
+
+/*текст с полоской*/
+p.we{
+	clear:both;
+	text-align:center;
+	padding:30px;
+	background:url("imgform/line.png") center no-repeat ;
+}
+.singemail{
+	padding:2px;
+	background-color:white;
+	font-family:"Grand Hotel", cursive;
+	font-size:35px;
+	color: #bc1549;
+}
+/* ВВЕДЕНИЕ email,пароля*/
+div.in{
+	margin:0 5px;
+}
+.inp{
+	width:416px;
+	font-size:15px;
+	padding:10px;
+	margin:2.5px 0;
+}
+.dop{
+	font-size:12px;
+	margin:25px 5px;
+	text-align:center;
+}
+input[type="password"].logemail{
+	margin-top:5px;
+}
+input:required{
+border:1px dotted #bc1549;
+}
+
+
+input:not([type="checkbox"]):focus{
+	outline:1px solid #bc1549;
+	box-shadow: 0 0 10px #bc1549;
+}
+/* выбор уровня навыков */
+.sel{
+	margin:2.5px 5px;
+}
+.sel label{
+	font-size:15px;
+}
+select{
+	width:100%;
+	font-size:15px;
+	padding:10px;
+	margin-top:5px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	border:1px solid #ebbabd;
+}
+select:focus{
+	outline:1px solid #bc1549;
+	box-shadow: 0 0 10px #ebbabd ;
+}
+/*Согласен на получение писем*/
+input[type="checkbox"]{
+	transform: scale(1.5);
+	width:25px;
+}
+div.ch{
+	margin:25px 5px;
+	font-size:20px;
+	font-family:"Grand Hotel", cursive;
+}
+
+::-webkit-input-placeholder{
+font-family:'Montserrat Alternates', sans-serif;
+font-size:15px;
+color:#cfcfcf;
+}
+:focus::-webkit-input-placeholder{
+color:transparent;
+}
+/*СТИЛИЗАЦИЯ CHECKBOX*/
+.checkbox {
+	display: none;
+}
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+	position: relative;    
+	width: 15px;             /*задаем ширину */
+	height: 15px;            /* задаем высоту */
+	border: 2px solid #bc1549 ;
+	border-radius: 3px;
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали.*/
+.checkbox-custom {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+	content: "";        
+	display: block;		
+	position: absolute;     
+	/* Задаем расстояние от верхней, правой, нижней и левой границы */
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	background: url("imgform/yes.jpg");     /* Добавляем картинку в виде "галочки" */
+}
+
+/*кнопка подтверждения*/
+button.su{
+	width:200px;
+	padding: 20px 0;
+	border-width:0;
+	display:block;
+	margin:25px auto ;
+	margin-top:25px;
+	font-size:15px;
+	letter-spacing:0.3em;
+	outline:none;
+	text-transform:uppercase;
+	color:white;
+	background-color: #bc1549;
+	border-radius:10px 10px;
+}
+button.su:hover{
+	box-shadow: 0 0 15px grey;
+}
+.formlog{
+	width:450px;
+	border:1px solid grey;
+	box-shadow: 0 0 100px grey;
+	margin:78px auto;
+	background-color:white;
+}
+.loginwith{
+	clear:both;
+}
+.loginwith a{
+	display:block;
+	width:400px;
+	text-align:center;
+	text-transform:uppercase;
+	padding:15px 0 ;
+	color:white;
+	margin:25px;
+	margin-bottom:0;
+	font-size:13px;
+}
+.loginwith a:hover{
+	box-shadow: 0 0 15px grey;
+}
+.lwg{/*google*/
+	background-color:#a5de72;
+}
+.lwf{/*facebook*/
+	background-color:#ebbabd;
+}
+.logemail{
+	width:376px;
+	font-size:15px;
+	margin:0 25px;
+	padding:10px;
+}
+label.logemail{
+	display:block;
+	margin:5px 25px;
+	font-family:"Grand Hotel", cursive;
+	font-size:25px;
+}
+a.logemail{
+	display:block;
+	margin:5px 25px 0 25px;
+	padding:0;
+	font-family:"Grand Hotel", cursive;
+	font-size:25px;
+    color: black;
+    text-transform: none;
+}
+.line{
+	height:2px;
+	background:url("imgform/line.png") center no-repeat ;
+}
+.dont{
+	padding:25px;
+	text-align:center;
+	font-family:"Grand Hotel", cursive;
+	color: #bc1549;
+	font-size:35px;
+}
+.dont a{
+	color: #64bd15;
+	display:inline;
+    font-size: 35px;
+    padding: 0;
+    text-transform: none;
+}
+.dont a:hover{
+	color: #3e7b07;
+}
+a.logemail:hover{
+	color: #bc1549;
+}
+
+
+@media screen and (max-width:958px){.formsing{
+	width:450px;
+}
+.picture img{
+	display:none;
+}
+}
+@media screen and (max-width:470px){
+	.formsing{
+		width:320px;
+		margin-top:5px;
+	}
+	.singupwith{
+		display:none;
+	}
+	p.we{
+	padding:10px;
+	background:url("imgform/line2.png") center no-repeat ;
+}
+form.float{
+	width:320px;
+}
+.inp{
+	width:286px;
+}
+.singemail{
+		font-size:25px;
+}
+.formlog{
+		width:320px;
+		margin-top:5px;
+	}
+.loginwith{
+		display:none;
+	}
+.logemail{
+		width:278px;
+		margin:0 10px;
+	}
+}
